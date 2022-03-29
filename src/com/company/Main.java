@@ -5,23 +5,23 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        int matematik, fizik, kimya, türkçe, tarih, muzik;
+        int maths , physics, chemistry, turkish , history, music;
 
         Scanner input = new Scanner(System.in);
         System.out.print("Matematik Dersinizin Notunu Giriniz: ");
-        matematik = input.nextInt();
+        maths  = input.nextInt();
         System.out.print("Fizik Dersinizin Notunu Giriniz: ");
-        fizik = input.nextInt();
+        physics = input.nextInt();
         System.out.print("Kimya Dersinizin Notunu Giriniz: ");
-        kimya = input.nextInt();
+        chemistry = input.nextInt();
         System.out.print("Türkçe Dersinizin Notunu Giriniz: ");
-        türkçe = input.nextInt();
+        turkish = input.nextInt();
         System.out.print("Tarih Dersinizin Notunu Giriniz: ");
-        tarih = input.nextInt();
+        history = input.nextInt();
         System.out.print("Müzik Dersinizin Notunu Giriniz: ");
-        muzik = input.nextInt();
+        music = input.nextInt();
 
-        double result = ((matematik + fizik + kimya + türkçe + tarih + muzik) / 6);
+        double result = ((maths + physics + chemistry + turkish + history + music) / 6);
         System.out.println("Ortalamanız : " + result);
 
         String str = result >= 60 ? "Tebrikler geçtiniz. " : "Üzgünüm kaldınız.";
